@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Fonecedor</title><form method="POST" action="fornecedor.php">
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/form.css"/>
+	<script type="text/javascript" src="_javascript/arrayList.js"></script>
+
+</head>
+<body>
+<div id="interface">
+	<header>
+	<hgroup>
+		<h1>Make Your Wish</h1>
+		<h2>SEJA BEM-VINDO FORNECEDOR</h2>
+	</hgroup>
+	</header>
+
+
+
+<form name="form" method="post" id="" action="fornecedor.php" onSubmit="return validacao();">
+	<!-- Aqui fica o cardápio -->
+	<fieldset id="pratos"><legend>Cardápio</legend>
+
+		<p class="prato">
+			<label for="prato1">Prato:</label>
+			<input type="text" name="prato" id="prato1" placeholder="Nome do prato" required="required"/>
+
+		<label for="total1">R$</label>
+			<input type="text" name="preco" id="total1" placeholder="Preço do Prato"/></p>
+
+		<p class="prato">
+			<label for="prato2">Prato:</label>
+			<input type="text" name="prato" id="prato2" placeholder="Nome do prato" required="required"/>
+
+		<label for="total1">R$</label>
+			<input type="text" name="preco" id="preco" placeholder="Preço do Prato"/></p>
+
+		<p class="prato">
+			<label for="prato2">Prato:</label>
+			<input type="text" name="prato" id="prato3" placeholder="Nome do prato" required="required"/>
+
+		<label for="total1">R$</label>
+			<input type="text" name="preco" id="total3" placeholder="Preço do Prato"/></p>
+
+		<p class="prato">
+			<label for="prato2">Prato:</label>
+			<input type="text" name="prato" id="prato4" placeholder="Nome do prato" required="required"/>
+
+			<label for="total1">R$</label>
+			<input type="text" name="preco" id="total4" placeholder="Preço do Prato"/></p>
+
+	</fieldset>
+
+	<!--Aqui fica as promoções -->
+	<fieldset id="promo"><legend>Promoção</legend>
+		<p>
+			<label for="pratoP1">Prato:</label>
+			<input type="text" name="prato" id="pratoP1" size="20" maxlength="30" placeholder="Nome do Prato"/>
+
+			<label for="valorP1">R$</label>
+			<input type="text" name="prato" id="prato" placeholder="Preço do Prato"/></p>
+
+		<p>
+		<label for="pratoP2">Prato:</label>
+		<input type="text" name="prato" id="pratoP2" size="20" maxlength="30" placeholder="Nome do Prato"/>
+
+		<label for="valorP2">R$</label>
+		<input type="text" name="preco" id="valorP2" placeholder="Preço do Prato"/></p>
+
+	</fieldset>
+
+	<!-- fitro -->
+	<fieldset id="filtro"><legend>Filtro</legend>
+
+		<!-- fitro Agendamento -->
+		<fieldset id="agendamento"><legend>Agendamento</legend>
+			<p>
+				<input type="checkbox" name="tDeli" id="cDeli"/>
+				<label for="cPed">Delivery</label>
+
+				<input type="checkbox" name="tEnt" id="cEnt"/>
+				<label for="cPed">Entrega</label>
+			</p>
+
+		</fieldset>
+
+		<!-- fitro Cozinha -->
+		<fieldset id="cozinha"><legend>Cozinha</legend>
+			<p><input type="checkbox" name="tBra" id="cBra"/>
+			<label for="cPed">Brasileira</label></p>
+			<input type="checkbox" name="tJapa" id="cJapa"/>
+				<label for="cPed">Japonesa</label></p>
+			<p><input type="checkbox" name="tChi" id="cChi"/>
+				<label for="cPed">Chineza</label></p>
+			<p><input type="checkbox" name="tMex" id="cMex"/>
+				<label for="cPed">Mexicana</label></p>
+			<p><input type="checkbox" name="tIta" id="cIta"/>
+				<label for="cPed">Italiana</label></p>
+		</fieldset>
+		<!-- fitro Pagamento -->
+		<fieldset><legend>Pagamento</legend>
+			<p><input type="checkbox" name="tPed" id="cPed"/>
+				<label for="cPed">Master</label></p>
+			<p><input type="checkbox" name="tPed" id="cPed"/>
+				<label for="cPed">Visa</label></p>
+			<p><input type="checkbox" name="tPed" id="cPed"/>
+				<label for="cPed">Paypal</label></p>
+		</fieldset>
+
+	</fieldset>
+
+	<p><input type="submit" value="Enviar"/>
+		<input type="submit" value="Alterar" name="alterar">
+		<input type="reset" value="Repor" name="resetar">
+	</p>
+
+</form>
+
+<!-- Aqui fica o rodapé -->
+<footer id="rodape">
+	<p>Copyright &copy; 2016 - Make Your Wish</br>
+			<a>Facebook</a> |
+			<a>Twitter</a>
+	</p>
+</footer>
+</div>
+</body>
+</html>
